@@ -25,7 +25,7 @@
             <span><a href="#" class="weather-link">Madrid</a></span>
             <span><a href="#" class="weather-link">Oslo</a></span>
           </div>
-          <form id="search-form">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-6">
                 <input
@@ -51,19 +51,24 @@
           </form>
           <div class="row">
             <div class="col-6">
-              <h1 id="result-city">Paris</h1>
-              <div id="current-date">Sunday, 18:56</div>
-              <div>Clear</div>
+              <h1 id="city">Paris</h1>
+              <ul>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="description"></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
             </div>
             <div class="col-6">
-              <div>
-                <span class="big-text">🌞</span><span id="temperature">12</span
+              <div class="d-flex weather-temperature">
+                <img src="" id="icon" alt="Clear" /><strong
+                  id="temperature"
+                ></strong
                 ><span class="units"
-                  ><span id="convert-to-celsius">°C</span> |
-                  <span id="convert-to-fahrenheit">°F</span></span
+                  ><a href="#" id="convert-to-celsius" class="active">°C</a> |
+                  <a href="#" id="convert-to-fahrenheit">°F</a></span
                 >
               </div>
-              <div class="temperature-text">Day 13° • Night 7°</div>
             </div>
           </div>
           <div class="row days-row">

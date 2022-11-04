@@ -1,7 +1,13 @@
+body {
+  font-family: arial, sans-serif;
+}
+
 h1 {
   color: #5a6275;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -10,15 +16,24 @@ h2 {
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.big-text {
-  color: #5a6275;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 
 .container {
@@ -27,7 +42,8 @@ a {
 }
 
 .weather-app {
-  border: 3px solid #4eae53;
+  border: 1px solid #4eae53;
+  border-radius: 5px;
 }
 
 .day-card {
@@ -42,7 +58,7 @@ a {
 }
 
 .weather-input {
-  border: 3px solid #4eae53;
+  border: 2px solid #4eae53;
   color: #4eae53;
 }
 
@@ -79,14 +95,28 @@ a {
   padding-top: 40px;
 }
 
-.units {
-  position: relative;
-  top: -24px;
+.weather-temperature img {
+  margin-right: 5px;
 }
 
-#temperature {
+.weather-temperature strong {
   color: #5a6275;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.weather-temperature .active {
+  color: #5a6275;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: 20px;
+  left: 5px;
 }
