@@ -105,18 +105,9 @@ li:first-letter {
   font-weight: 400;
 }
 
-.weather-temperature .active {
-  color: #5a6275;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 .weather-temperature .units {
   position: relative;
-  top: 20px;
+  font-size: 24px;
+  top: 16px;
   left: 5px;
 }

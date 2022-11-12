@@ -74,25 +74,6 @@ form.addEventListener("submit", handleSubmit);
 let current = document.querySelector("#current");
 current.addEventListener("click", getCurrentPosition);
 
-let toCelsius = document.querySelector("#convert-to-celsius");
-toCelsius.addEventListener("click", function (event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  toCelsius.classList.add("active");
-  toFahrenheit.classList.remove("active");
-});
-
-let toFahrenheit = document.querySelector("#convert-to-fahrenheit");
-toFahrenheit.addEventListener("click", function (event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  toCelsius.classList.remove("active");
-  toFahrenheit.classList.add("active");
-});
-
 let celsiusTemperature = null;
 
 search("New York");
