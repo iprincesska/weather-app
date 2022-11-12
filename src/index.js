@@ -129,12 +129,10 @@ let celsiusTemperature = null;
 
 function showWeatherByLink(event) {
   event.preventDefault();
-  console.log(event.target.innerText);
   search(event.target.innerText);
 }
 let weatherLinks = document.querySelectorAll(".weather-link");
 weatherLinks.forEach((link) => {
-  console.log(link);
   link.addEventListener("click", showWeatherByLink);
 });
 
